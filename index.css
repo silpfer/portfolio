@@ -421,3 +421,18 @@ h1, h2{
 .text-box{
     margin-bottom: 25px;
 }
+
+.about-me{
+    width: 50%;
+    padding-left: 25%;
+    
+}
+
+#about-me{
+    text-align: center;
+}
+
+#text-about{
+    margin: 0;
+    text-indent: 2em;
+}
