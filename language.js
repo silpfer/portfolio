@@ -52,9 +52,9 @@ let enText = {
             'User authorization',
             'Housing booking'
         ]
-    ],
-    aboutMe: "About me",
-    textAbout: "Hi, I'm a junior developer. I have a good knowledge base for working on projects of various complexity. I know programming languages C++, C#, JavaScript and Python moderately well. I know the principles of OOP and FP. I can create and work with various data structures, classes and functions.\nI also learned how to work with databases, starting with topic analysis and ending with the creation of triggers and procedures.\nI don't have much relevant work experience, but I am eager to deepen my knowledge and participate in the creation of interesting projects. I learn quickly and process information efficiently."
+    ]
+    //aboutMe: "About me",
+    //textAbout: "Hi, I'm a junior developer. I have a good knowledge base for working on projects of various complexity. I know programming languages C++, C#, JavaScript and Python moderately well. I know the principles of OOP and FP. I can create and work with various data structures, classes and functions.\nI also learned how to work with databases, starting with topic analysis and ending with the creation of triggers and procedures.\nI don't have much relevant work experience, but I am eager to deepen my knowledge and participate in the creation of interesting projects. I learn quickly and process information efficiently."
 }
 
 let ukText = {
@@ -111,9 +111,9 @@ let ukText = {
             'Авторизація користувача',
             'Бронювання житла' 
         ]
-    ],
-    aboutMe: "Про мене",
-    textAbout: "Привіт, я починаючий розробник. Маю гарну базу знань для роботи над проектами різної складності. Я добре знаю мови програмування С++, C#, JavaScript та посередньо Python. Знаю принципи ООП та ФП. Вмію створювати та працювати з різними структурами даних, класами та функціями.\nТакож вивчала роботу з базами даних починаючи з аналізу теми закінчуючи створенням тригерів та процедур.\nЯ не маю багато релевантного досвіду роботи, але прагну поглибити свої знання та взяти участь у створенні цікавих проектів. Швидко навчаюсь та ефективно опрацьовую інформацію. "
+    ]
+    //aboutMe: "Про мене",
+    //textAbout: "Привіт, я починаючий розробник. Маю гарну базу знань для роботи над проектами різної складності. Я добре знаю мови програмування С++, C#, JavaScript та посередньо Python. Знаю принципи ООП та ФП. Вмію створювати та працювати з різними структурами даних, класами та функціями.\nТакож вивчала роботу з базами даних починаючи з аналізу теми закінчуючи створенням тригерів та процедур.\nЯ не маю багато релевантного досвіду роботи, але прагну поглибити свої знання та взяти участь у створенні цікавих проектів. Швидко навчаюсь та ефективно опрацьовую інформацію. "
 }
 
 const ua = document.getElementById('ua');
@@ -212,10 +212,10 @@ function changeLanguage(languageNumb) {
     document.getElementById("title-technologies").innerText = text.titleTechnologies;
     document.getElementById("title-education").innerText = text.titleEducation;
     document.getElementById("experience").innerText = text.experience;
-    document.getElementById("about-me").innerText = text.aboutMe;
-    //document.getElementById("text-about").innerText = text.textAbout;
-    let paragraphs = text.textAbout.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
-    document.getElementById("text-about").innerHTML = paragraphs;
+    //document.getElementById("about-me").innerText = text.aboutMe;
+    //let paragraphs = text.textAbout.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+    //document.getElementById("text-about").innerHTML = paragraphs;
+
     for(i=0; i<3; i++){
         document.getElementById(`version${i+1}`).innerText = text.version[i];
     }
