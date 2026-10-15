@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nataliia Sydorenko — PHP Backend Developer</title>
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <span class="logo">NS</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="#about" data-i18n="navAbout"></a>
+          <a href="#experience" data-i18n="navExperience"></a>
+          <a href="#projects" data-i18n="navProjects"></a>
+          <a href="#stack" data-i18n="navStack"></a>
+          <a href="#contact" data-i18n="navContact"></a>
+        </nav>
+        <div class="controls">
+          <button class="pill-btn" type="button" data-lang="uk">UA</button>
+          <button class="pill-btn" type="button" data-lang="en">EN</button>
+          <button class="pill-btn" id="themeToggle" type="button" data-i18n="theme"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <div class="hero">
+      <div class="wrap">
+        <span class="eyebrow" data-i18n="heroBadge"></span>
+        <h1>Nataliia Sydorenko</h1>
+        <p class="role" data-i18n="heroRole"></p>
+        <p class="lead" data-i18n="heroLead"></p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:sudorenko0010@gmail.com" data-i18n="btnEmail"></a>
+          <a class="btn" href="https://www.linkedin.com/in/nataliia-sydorenko-33a930392/" target="_blank"
+            rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/silpfer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="contact-row">
+          <span data-i18n="city"></span>
+          <a href="tel:+380671750670">+380 67 175 0670</a>
+          <a href="mailto:sudorenko0010@gmail.com">sudorenko0010@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="aboutTitle"></h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p data-i18n="aboutP1"></p>
+            <p data-i18n="aboutP2"></p>
+          </div>
+          <div class="facts">
+            <div class="fact"><strong data-i18n="fact1Num"></strong><span data-i18n="fact1Label"></span></div>
+            <div class="fact"><strong data-i18n="fact2Num"></strong><span data-i18n="fact2Label"></span></div>
+            <div class="fact"><strong data-i18n="fact3Num"></strong><span data-i18n="fact3Label"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="expTitle"></h2><span data-i18n="expSub"></span>
+        </div>
+        <div class="timeline">
+
+          <div class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div>
+                  <h3 data-i18n="job1Title"></h3>
+                  <div class="co" data-i18n="job1Co"></div>
+                </div>
+                <div class="job-date" data-i18n="job1Date"></div>
+              </div>
+              <ul data-i18n-list="job1List"></ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div>
+                  <h3 data-i18n="job2Title"></h3>
+                  <div class="co" data-i18n="job2Co"></div>
+                </div>
+                <div class="job-date" data-i18n="job2Date"></div>
+              </div>
+              <ul data-i18n-list="job2List"></ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-card">
+              <div class="job-head">
+                <div>
+                  <h3 data-i18n="job3Title"></h3>
+                  <div class="co" data-i18n="job3Co"></div>
+                </div>
+                <div class="job-date" data-i18n="job3Date"></div>
+              </div>
+              <ul data-i18n-list="job3List"></ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="projTitle"></h2><span data-i18n="projSub"></span>
+        </div>
+        <div class="projects">
+
+          <article class="project">
+            <video controls preload="metadata" src="./media/clothingstore.mp4"></video>
+            <div class="project-body">
+              <h3 data-i18n="p1Title"></h3>
+              <p data-i18n="p1Desc"></p>
+              <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span
+                  class="tag">SQL</span></div>
+              <details>
+                <summary data-i18n="doneLabel"></summary>
+                <ul data-i18n-list="p1Tasks"></ul>
+              </details>
+            </div>
+          </article>
+
+          <article class="project">
+            <video controls preload="metadata" src="./media/Cafe.mp4"></video>
+            <div class="project-body">
+              <h3 data-i18n="p2Title"></h3>
+              <p data-i18n="p2Desc"></p>
+              <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">SQL</span>
+              </div>
+              <details>
+                <summary data-i18n="doneLabel"></summary>
+                <ul data-i18n-list="p2Tasks"></ul>
+              </details>
+            </div>
+          </article>
+
+          <article class="project">
+            <video controls preload="metadata" src="./media/Booking.mp4"></video>
+            <div class="project-body">
+              <h3 data-i18n="p3Title"></h3>
+              <p data-i18n="p3Desc"></p>
+              <div class="tags"><span class="tag">C#</span><span class="tag">Xamarin</span></div>
+              <details>
+                <summary data-i18n="doneLabel"></summary>
+                <ul data-i18n-list="p3Tasks"></ul>
+              </details>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="more-projects">
+          <div class="card">
+            <h3 data-i18n="p4Title"></h3>
+            <p data-i18n="p4Desc"></p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="p5Title"></h3>
+            <p data-i18n="p5Desc"></p>
+            <p style="margin-top: 10px;"><a href="https://github.com/silpfer/test-game" target="_blank"
+                rel="noopener">GitHub →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="stackTitle"></h2><span data-i18n="stackSub"></span>
+        </div>
+        <div class="stack">
+          <div class="stack-group">
+            <h3 data-i18n="stLang"></h3>
+            <div class="stack-items">
+              <span>PHP</span><span>Python</span><span>JavaScript</span><span>C#</span><span>C++</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3 data-i18n="stBack"></h3>
+            <div class="stack-items">
+              <span>Symfony</span><span>Laravel</span><span>Flask</span><span>ASP.NET Core</span><span>Entity Framework
+                Core</span><span>Doctrine ORM</span><span>Node.js</span><span>Xamarin</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3 data-i18n="stFront"></h3>
+            <div class="stack-items">
+              <span>React</span><span>Next.js</span><span>Vue</span><span>jQuery</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3 data-i18n="stData"></h3>
+            <div class="stack-items">
+              <span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span><span>SQLite</span><span>Redis</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3 data-i18n="stInt"></h3>
+            <div class="stack-items">
+              <span>RabbitMQ</span><span>REST APIs</span><span>Webhooks</span><span>Payment
+                systems</span><span>Marketplaces</span><span>ERP integrations</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3 data-i18n="stDevops"></h3>
+            <div class="stack-items">
+              <span>Docker</span><span>Nginx</span><span>Git</span><span>Swagger /
+                OpenAPI</span><span>JWT</span><span>PHPStan</span><span>Claude Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="eduTitle"></h2>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <h3 data-i18n="eduDeg"></h3>
+            <p data-i18n="eduSchool"></p>
+          </div>
+          <div class="card">
+            <div class="lang-row"><span data-i18n="langUk"></span><span data-i18n="langUkLvl"></span></div>
+            <div class="lang-row"><span data-i18n="langEn"></span><span data-i18n="langEnLvl"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-title">
+          <h2 data-i18n="contactTitle"></h2>
+        </div>
+        <p style="color: var(--muted); max-width: 600px;" data-i18n="contactText"></p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:sudorenko0010@gmail.com">sudorenko0010@gmail.com</a>
+          <a class="btn" href="tel:+380671750670">+380 67 175 0670</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span data-i18n="footerName"></span>
+      <span data-i18n="city"></span>
+    </div>
+  </footer>
+
+  <script src="language.js"></script>
+</body>
+
+</html>
